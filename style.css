@@ -1,0 +1,300 @@
+/* GOOGLE FONTS LINKING */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+* {
+    transition: all ease 0.9s;
+    margin: 0;
+    padding: 0;
+}
+
+.web-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+}
+
+.intro img {
+    height: 8vh;
+    filter: opacity(100%);
+}
+
+.menu img {
+    height: 5vh;
+    cursor: pointer;
+}
+
+.menu img:active, .menu img:hover {
+    height: 5.2vh;
+}
+
+.menu-bar {
+    position: fixed;
+    background: linear-gradient(324deg, black, #070024);
+    width: 15vw;
+    min-height: 100vh;
+    display: flex;
+    padding-left: 0px;
+    /* Padding = 0 -> For Removing the Bootstrap Default Setting */
+    flex-direction: column;
+    transform: translateX(0px);
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+.menu-bar li i {
+    color: white;
+}
+
+.showmenu {
+    transform: translateX(-500px);
+}
+
+.menu-bar li {
+    padding: 20px 0;
+    text-align: center;
+    list-style-type: none;
+    border-bottom: 1px solid white;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.menu-bar li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar li a {
+    text-decoration: none;
+    color: snow;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 10px;
+}
+
+.menu-bar li a:hover {
+    font-size: 16.4px;
+    transition: 0.6s;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    background-color: white;
+    z-index: 99;
+    position: sticky;
+    top: 53px;
+}
+
+.social-links img {
+    height: 3.2vh;
+    margin: 0 1rem;
+}
+
+.navbar-collapse {
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: black !important;
+}
+
+
+/*😊😊😊 INDEX.HTML - CSS 😊😊😊*/
+/* XXX Home XXX */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 96vh;
+}
+
+.home-text {
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-text h5 {
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(255, 20, 129);
+    font-family: cursive;
+}
+
+.home-text h2 {
+    font-weight: 700;
+}
+
+.home-image img {
+    height: 100vh;
+}
+
+/* XXX Brand Section XXX */
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    /* background-color: red; */
+}
+
+.brand-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: radial-gradient(orange, red);
+    width: 60vw;
+    border-radius: 10rem;
+    padding: 2rem;
+}
+
+.brand-box-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.brand-box-left .fa-solid {
+    filter: invert(1);
+    font-size: 1.6rem;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 0.6rem;
+}
+
+.brand-box-left h4 {
+    color: white;
+    font-family: cursive;
+}
+
+.brand-box-left p {
+    margin-bottom: 0px;
+    font-family: serif;
+    color: white;
+}
+
+.brand-box-right img {
+    height: 20vh;
+}
+
+/* MEET WITH AKS BANNER */
+.meet-with-aks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: radial-gradient(#810000, #420000);
+    margin: 1rem 0;
+}
+
+.meet-with-aks img {
+    height: 98%;
+    width: auto;
+}
+
+/* MEET WITH AKS BANNER ENDS */
+
+/* CERTIFICATE */
+.certificates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: pink; */
+    height: 100vh;
+    margin: 6rem 0;
+}
+
+.certificates h3 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+}
+
+.certificates-show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    padding: 1rem 0;
+}
+
+
+.certificates-show img {
+    height: 65vh;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.carousel-item h5 {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 0.8rem;
+}
+
+.carousel-control-next-icon {
+    background-image: url(/images/icons/right-arrow.png);
+}
+
+.carousel-control-prev-icon {
+    background-image: url(/images/icons/right-arrow.png);
+    transform: rotateY(180deg);
+}
+
+
+
+/* CERTIFICATE ENDS*/
+
+
+/*😊😊😊 INDEX.HTML - CSS ends 😊😊😊*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*❤❤❤ UPDATE.HTML - CSS ❤❤❤*/
+.alert-success {
+    color: #000000;
+    background-color: #00c89724;
+    border-color: #005a31;
+}
+
+.accordion {
+    width: 50%;
+    margin: auto;
+}
+
+/*❤❤❤ UPDATE.HTML - CSS ENDED ❤❤❤*/
